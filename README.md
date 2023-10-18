@@ -1,2 +1,2 @@
 # HTML Learning
-Everything HTML
+Everything HTML and CSS
