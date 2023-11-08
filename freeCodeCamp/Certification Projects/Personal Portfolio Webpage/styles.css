@@ -1,0 +1,25 @@
+@media screen {
+    html {
+        size: 100%;
+    }
+}
+
+nav ul {
+    list-style: none;
+}
+
+.welcome-section {
+    height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 10px 0;
+}
+
+.welcome-section {
+    margin-top: 6em;
+}
