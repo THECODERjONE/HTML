@@ -1,3 +1,4 @@
+/* #region media queries*/
 @media only screen and (max-width: 815px) {
     #navbar ul {
       border: 1px solid;
@@ -38,6 +39,8 @@
       min-width: 233px;
     }
 }
+/* #endregion media queries*/
+
 
 html, body {
   min-width: 290px;
@@ -47,6 +50,7 @@ html, body {
   line-height: 1.5;
 }
 
+/* #region navbar */
 #navbar {
   position: fixed;
   min-width: 290px;
@@ -59,25 +63,12 @@ html, body {
 }
 
 #navbar .nav-link:hover {
-    background-color: azure;
-    font-style: italic;
+  background-color: azure;
+  font-weight: bold;
 }
 
 #navbar header {
     font-weight: bold;
-}
-
-header {
-  color: black;
-  margin: 10px;
-  text-align: center;
-  font-size: 1.8em;
-  font-weight: thin;
-}
-
-#main-doc header {
-  text-align: left;
-  margin: 0px;
 }
 
 #navbar ul {
@@ -102,6 +93,21 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
+/* #endregion navbar*/
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+/* #region main*/
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
 
 #main-doc {
   position: absolute;
@@ -120,6 +126,7 @@ section li {
   margin: 15px 0px 0px 20px;
 }
 
+/* #region code*/
 code {
   display: block;
   text-align: left;
@@ -137,3 +144,5 @@ code {
 .comment {
     color: green;
 }
+/* #endregion code*/
+/* #endregion main*/
