@@ -2,7 +2,7 @@
 :root {
     --mainWhite: #f0f0f0;
     --mainRed: #be3144;
-    --mainBlue: #45567d;
+    --mainBlue: #34456d;
     --mainGray: #303841;
     --pureBlack: #000000;
     --darkGray: #333333;
@@ -140,7 +140,7 @@ img {
 }
 
 .nav-list a:hover {
-    background: var(--lFRed) 80%;
+    background: var(--dDMB);
     font-weight: bold;
     border-radius: 10px;
 }
@@ -153,9 +153,10 @@ img {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    height: 100vh;    
+    background-color: var(--charcoal);
+    border-bottom: 4px solid var(--dDMB);
+    background-image: linear-gradient(62deg, var(--charcoal) 0%, var(--darkGray) 50%, #181719 100%);
 }
 
 .welcome-section > p {
@@ -170,7 +171,7 @@ img {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--mainBlue);
+    background: var(--navyBlue);
 }
 
 .projects-section-header {
@@ -185,7 +186,6 @@ img {
 }
 }
 
-/* "Automagic" image grid using no media queries */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -218,7 +218,7 @@ img {
 }
 
 .project:hover .code {
-    color: #ff7f50;
+    color: var(--fireBrick);
 }
 
 .project-image {
@@ -238,6 +238,10 @@ img {
     border-radius: 2px;
 }
 
+.fa-linkedin {
+    size: 48px 48px;
+}
+
 .icon-show-all {
     font-size: 2rem;
     background: var(--mainGray);
@@ -245,7 +249,7 @@ img {
 }
 
 .icon-show-all:hover {
-    background: var(--mainRed);
+    background: var(--darkGray);
 }
 
 .icon-show-all:hover > i {
@@ -270,7 +274,10 @@ img {
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--mainGray);
+    border-top: 4px solid var(--dDMB);
+    border-bottom: 4px solid var(--dDMB);
+    background-color: var(--charcoal);
+    background-image: linear-gradient(62deg,#181719 0%, var(--darkGray) 50%, var(--charcoal) 100%);
 }
 
 .contact-section-header > h2 {
@@ -289,7 +296,7 @@ img {
 
 .contact-links {
     display: flex;
-    font-family: Myriad Pro-Black;
+    font-family: Poppin;
     justify-content: center;
     width: 100%;
     max-width: 980px;
@@ -299,7 +306,7 @@ img {
 
 .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
+    text-shadow: 2px 2px 1px var(--pureBlack);
     transition: transform 0.3s ease-out;
 }
 
@@ -307,3 +314,34 @@ img {
     transform: translateY(8px);
 }
 /* #endregion contact section */
+
+/* #region footer */
+footer {
+    font-size: 1rem;
+    font-weight: 60;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--pureBlack);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+  
+footer > p {
+    vertical-align: middle;
+    vertical-align: center;
+}
+  
+footer i {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+  
+@media (max-width: 28.75em) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+}
+/* #endregion footer */
